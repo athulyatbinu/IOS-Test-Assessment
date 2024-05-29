@@ -16,6 +16,8 @@
 		52D3B6482C074CD7009EFEA1 /* TestAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6472C074CD7009EFEA1 /* TestAssessmentTests.swift */; };
 		52D3B6522C074CD7009EFEA1 /* TestAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6512C074CD7009EFEA1 /* TestAssessmentUITests.swift */; };
 		52D3B6542C074CD7009EFEA1 /* TestAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6532C074CD7009EFEA1 /* TestAssessmentUITestsLaunchTests.swift */; };
+		52D3B6652C074D7C009EFEA1 /* TADataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6642C074D7C009EFEA1 /* TADataManager.swift */; };
+		52D3B6672C074D9D009EFEA1 /* TAAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6662C074D9D009EFEA1 /* TAAPIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		52D3B64D2C074CD7009EFEA1 /* TestAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D3B6512C074CD7009EFEA1 /* TestAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssessmentUITests.swift; sourceTree = "<group>"; };
 		52D3B6532C074CD7009EFEA1 /* TestAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52D3B6642C074D7C009EFEA1 /* TADataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TADataManager.swift; sourceTree = "<group>"; };
+		52D3B6662C074D9D009EFEA1 /* TAAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAPIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,10 @@
 		52D3B62F2C074CD3009EFEA1 /* TestAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				52D3B6622C074D53009EFEA1 /* Models */,
+				52D3B6612C074D4C009EFEA1 /* Controllers */,
+				52D3B6602C074D40009EFEA1 /* Utilities */,
+				52D3B6632C074D5E009EFEA1 /* Constants */,
 				52D3B6302C074CD3009EFEA1 /* AppDelegate.swift */,
 				52D3B6322C074CD3009EFEA1 /* SceneDelegate.swift */,
 				52D3B6342C074CD3009EFEA1 /* ViewController.swift */,
@@ -125,6 +133,36 @@
 				52D3B6532C074CD7009EFEA1 /* TestAssessmentUITestsLaunchTests.swift */,
 			);
 			path = TestAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		52D3B6602C074D40009EFEA1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				52D3B6642C074D7C009EFEA1 /* TADataManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		52D3B6612C074D4C009EFEA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52D3B6622C074D53009EFEA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52D3B6632C074D5E009EFEA1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				52D3B6662C074D9D009EFEA1 /* TAAPIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D3B6652C074D7C009EFEA1 /* TADataManager.swift in Sources */,
+				52D3B6672C074D9D009EFEA1 /* TAAPIConstants.swift in Sources */,
 				52D3B6352C074CD3009EFEA1 /* ViewController.swift in Sources */,
 				52D3B6312C074CD3009EFEA1 /* AppDelegate.swift in Sources */,
 				52D3B6332C074CD3009EFEA1 /* SceneDelegate.swift in Sources */,
