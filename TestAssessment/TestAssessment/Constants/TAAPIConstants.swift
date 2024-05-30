@@ -21,5 +21,5 @@ struct APIConstants
     
     static let kLimitKey = "_limit"
     
-    static let kLimitValue = 10
+    static let kLimitValue = 20
 }

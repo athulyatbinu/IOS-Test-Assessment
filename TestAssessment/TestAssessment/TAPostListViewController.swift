@@ -76,3 +76,11 @@ extension TAPostListViewController : UITableViewDelegate, UITableViewDataSource
     }
 }
 
+extension TAPostListViewController : TAPostsDelegate
+{
+    func didTapToLoadMore() {
+        
+        loadMore()
+    }
+}
+
