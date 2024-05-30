@@ -30,7 +30,7 @@ class TAPostTableViewCell: UITableViewCell {
     {
         titleLabel.text = post.title ?? ""
         
-        idLabel.text = "\(post.id ?? 0)"
+        idLabel.text = "Id: \(post.id ?? 0)"
         
         detailLabel?.text = (post.body != nil) ? performIntensiveComputation(for: post.body!) : "NA"
     }

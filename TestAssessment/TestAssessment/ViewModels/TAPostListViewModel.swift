@@ -15,8 +15,14 @@ class TAPostListViewModel
     
     var page = 1
     
+    var isLoading = false
+    
     func fetchData() async
     {
+        guard !isLoading else { return }
+        
+        isLoading = true
+        
         do {
             let posts = try await TADataManager.shared.getPosts(page: page)
             
@@ -29,9 +35,13 @@ class TAPostListViewModel
                 postsArray = posts
             }
             
+            isLoading = false
+            
         } catch {
             
             self.onErrorHandling?(error.localizedDescription)
+            
+            isLoading = false
         }
     }
     

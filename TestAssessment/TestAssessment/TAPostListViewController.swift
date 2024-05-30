@@ -82,5 +82,15 @@ extension TAPostListViewController : UITableViewDelegate, UITableViewDataSource
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        let detailConrtoller = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "detailConrtoller") as! TAPostDetailViewController
+        
+        detailConrtoller.post = viewModel.postForRow(indexPath: indexPath)
+        
+        self.navigationController!.pushViewController(detailConrtoller, animated: true)
+    }
 }
 
