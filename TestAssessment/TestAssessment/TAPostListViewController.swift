@@ -18,24 +18,32 @@ class TAPostListViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        getDataAndReload()
     }
     
     //MARK: - Other Functions -
     
     func getDataAndReload()
     {
-        viewModel.fetchData()
-        
-        postsTabelView.reloadData()
+        Task.init {
+            
+            await viewModel.fetchData()
+            
+            postsTabelView.reloadData()
+        }
     }
     
     func loadMore()
     {
-        viewModel.loadMore()
-        
-        postsTabelView.reloadData()
-        
-        scrollToNewList()
+        Task.init {
+            
+            await viewModel.loadMore()
+            
+            postsTabelView.reloadData()
+            
+            scrollToNewList()
+        }
     }
     
     func scrollToNewList()

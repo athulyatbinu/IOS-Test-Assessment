@@ -40,7 +40,7 @@ class TADataManager:NSObject
                     
                     //continuation.resume(throwing:Error as! Error)
                 }
-            }
+            }.resume()
         }
 
     }

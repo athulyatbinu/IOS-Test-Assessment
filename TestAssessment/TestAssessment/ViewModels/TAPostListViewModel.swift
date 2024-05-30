@@ -15,34 +15,31 @@ class TAPostListViewModel
     
     var page = 1
     
-    func fetchData()
+    func fetchData() async
     {
-        Task.init {
-            do {
-                
-                let posts = try await TADataManager.shared.getPosts(page: page)
-                
-                if postsArray != nil
-                {
-                    postsArray?.append(contentsOf: posts)
-                }
-                else
-                {
-                    postsArray = posts
-                }
-                
-            } catch {
-                
-                self.onErrorHandling?(error.localizedDescription)
+        do {
+            let posts = try await TADataManager.shared.getPosts(page: page)
+            
+            if postsArray != nil
+            {
+                postsArray?.append(contentsOf: posts)
             }
+            else
+            {
+                postsArray = posts
+            }
+            
+        } catch {
+            
+            self.onErrorHandling?(error.localizedDescription)
         }
     }
     
-    func loadMore()
+    func loadMore() async
     {
         page += 1
         
-        fetchData()
+        await fetchData()
     }
     
     func numberOfRows() -> Int
