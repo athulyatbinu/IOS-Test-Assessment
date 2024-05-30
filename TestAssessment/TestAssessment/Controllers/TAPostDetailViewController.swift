@@ -32,6 +32,8 @@ class TAPostDetailViewController: UIViewController {
     
     func setUpView()
     {
+        self.title = Strings.str_pageTitle_PostDetail
+        
         titleLabel.text = post?.title ?? ""
         
         idLabel.text = "Id: \(post?.id ?? 0)"
