@@ -17,9 +17,9 @@ struct APIConstants
     
     //MARK: - Keys
     
-    static let kPageKey = "page"
+    static let kPageKey = "_page"
     
-    static let kLimitKey = "limit"
+    static let kLimitKey = "_limit"
     
     static let kLimitValue = 10
 }
