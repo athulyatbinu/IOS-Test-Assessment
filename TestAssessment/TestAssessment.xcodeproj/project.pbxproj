@@ -24,8 +24,6 @@
 		52D3B66B2C0758BB009EFEA1 /* TAStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B66A2C0758BB009EFEA1 /* TAStringConstants.swift */; };
 		52D3B66E2C08275B009EFEA1 /* TAPostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B66D2C08275B009EFEA1 /* TAPostListViewModel.swift */; };
 		52D3B6712C0841AC009EFEA1 /* TAPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6702C0841AC009EFEA1 /* TAPostTableViewCell.swift */; };
-		52D3B6752C089E5C009EFEA1 /* TAPostFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6742C089E5C009EFEA1 /* TAPostFooterView.swift */; };
-		52D3B6782C08A14E009EFEA1 /* TAProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3B6772C08A14E009EFEA1 /* TAProtocols.swift */; };
 		ECDE7C0DC09514C58796BB6E /* Pods_TestAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA1C9829B379197E01A7F9 /* Pods_TestAssessment.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +67,6 @@
 		52D3B66A2C0758BB009EFEA1 /* TAStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStringConstants.swift; sourceTree = "<group>"; };
 		52D3B66D2C08275B009EFEA1 /* TAPostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPostListViewModel.swift; sourceTree = "<group>"; };
 		52D3B6702C0841AC009EFEA1 /* TAPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPostTableViewCell.swift; sourceTree = "<group>"; };
-		52D3B6742C089E5C009EFEA1 /* TAPostFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPostFooterView.swift; sourceTree = "<group>"; };
-		52D3B6772C08A14E009EFEA1 /* TAProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAProtocols.swift; sourceTree = "<group>"; };
 		6C2A1B384783131632BB4C77 /* Pods_TestAssessmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D9397F1395290B8A4F9C94 /* Pods-TestAssessment-TestAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAssessment-TestAssessmentUITests.release.xcconfig"; path = "Target Support Files/Pods-TestAssessment-TestAssessmentUITests/Pods-TestAssessment-TestAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CC53FBF7391C33B0EEB5CC5C /* Pods-TestAssessment-TestAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAssessment-TestAssessmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestAssessment-TestAssessmentUITests/Pods-TestAssessment-TestAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +151,6 @@
 		52D3B62F2C074CD3009EFEA1 /* TestAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				52D3B6762C089F96009EFEA1 /* Protocols */,
 				52D3B66F2C084178009EFEA1 /* Views */,
 				52D3B6622C074D53009EFEA1 /* Models */,
 				52D3B6612C074D4C009EFEA1 /* Controllers */,
@@ -233,7 +228,6 @@
 		52D3B66F2C084178009EFEA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52D3B6732C089DF6009EFEA1 /* Post */,
 				52D3B6722C089DE3009EFEA1 /* Table Cells */,
 			);
 			path = Views;
@@ -245,22 +239,6 @@
 				52D3B6702C0841AC009EFEA1 /* TAPostTableViewCell.swift */,
 			);
 			path = "Table Cells";
-			sourceTree = "<group>";
-		};
-		52D3B6732C089DF6009EFEA1 /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				52D3B6742C089E5C009EFEA1 /* TAPostFooterView.swift */,
-			);
-			path = Post;
-			sourceTree = "<group>";
-		};
-		52D3B6762C089F96009EFEA1 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				52D3B6772C08A14E009EFEA1 /* TAProtocols.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,9 +484,7 @@
 				52D3B6672C074D9D009EFEA1 /* TAAPIConstants.swift in Sources */,
 				52D3B6352C074CD3009EFEA1 /* TAPostListViewController.swift in Sources */,
 				52D3B6312C074CD3009EFEA1 /* AppDelegate.swift in Sources */,
-				52D3B6752C089E5C009EFEA1 /* TAPostFooterView.swift in Sources */,
 				52D3B66B2C0758BB009EFEA1 /* TAStringConstants.swift in Sources */,
-				52D3B6782C08A14E009EFEA1 /* TAProtocols.swift in Sources */,
 				52D3B6712C0841AC009EFEA1 /* TAPostTableViewCell.swift in Sources */,
 				52D3B6692C0757D5009EFEA1 /* TAPost.swift in Sources */,
 				52D3B6332C074CD3009EFEA1 /* SceneDelegate.swift in Sources */,

@@ -9,11 +9,13 @@ import UIKit
 
 class TAPostListViewController: UIViewController {
     
-    //MARK: - Declarations & View Life Cycle-
+    //MARK: - Declarations -
 
     @IBOutlet weak var postsTabelView: UITableView!
     
     let viewModel = TAPostListViewModel()
+    
+    //MARK: - Declarations & View Life Cycle-
     
     override func viewDidLoad() {
         
@@ -72,15 +74,13 @@ extension TAPostListViewController : UITableViewDelegate, UITableViewDataSource
         
         cell.selectionStyle = .none
         
-        return cell
-    }
-}
-
-extension TAPostListViewController : TAPostsDelegate
-{
-    func didTapToLoadMore() {
+        //Pagination
         
-        loadMore()
+        if indexPath.row == (viewModel.postsArray?.count ?? 0) - 1 {
+                    loadMore()
+        }
+        
+        return cell
     }
 }
 
