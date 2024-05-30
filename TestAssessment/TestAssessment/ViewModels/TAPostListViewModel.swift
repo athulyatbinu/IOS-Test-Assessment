@@ -9,6 +9,8 @@ import Foundation
 
 class TAPostListViewModel
 {
+    //MARK: - Declarations
+    
     var postsArray:[TAPost]?
     
     var onErrorHandling : ((String) -> Void)?
@@ -16,6 +18,8 @@ class TAPostListViewModel
     var page = 1
     
     var isLoading = false
+    
+    //MARK: Data Fetching related Methods
     
     func fetchData() async
     {
@@ -51,6 +55,8 @@ class TAPostListViewModel
         
         await fetchData()
     }
+    
+    //MARK: - UI related helper methods -
     
     func numberOfRows() -> Int
     {

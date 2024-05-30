@@ -37,7 +37,7 @@ class TADataManager:NSObject
                 }
                 else{
                     
-                    //continuation.resume(throwing:Error as! Error)
+                    continuation.resume(throwing:TAError.runtimeError(Strings.str_Default_APIError))
                 }
             }.resume()
         }
