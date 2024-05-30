@@ -131,7 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bodyLabel" destination="T2E-hp-sVq" id="QpG-cW-vAs"/>
+                        <outlet property="detailLabel" destination="T2E-hp-sVq" id="QpG-cW-vAs"/>
                         <outlet property="idLabel" destination="BWW-V7-yZs" id="fCA-Nh-bqj"/>
                         <outlet property="titleLabel" destination="yUn-Br-uFt" id="ezV-ih-0qe"/>
                     </connections>

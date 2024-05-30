@@ -18,7 +18,6 @@ class TAPostTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         
         super.awakeFromNib()
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,21 +36,6 @@ class TAPostTableViewCell: UITableViewCell {
     
     func performIntensiveComputation(for text: String) -> String {
         
-        // Simulate intensive computation
-        
-        let startTime = CFAbsoluteTimeGetCurrent()
-        
-        var result = text
-        
-        for _ in 0..<10000 {
-            
-            result = String(result.reversed())
-        }
-        
-        let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
-        
-        print("Time elapsed for computation: \(timeElapsed) seconds")
-        
-        return result
+        return TAComputationCacheManager.shared.performIntensiveComputation(for: text)
     }
 }

@@ -15,7 +15,6 @@ class TADataManager:NSObject
     
     static let shared = TADataManager()
     
-    
     //MARK: - Funcation to Handle Posts Data Request -
     
     func getPosts(page:Int = 1) async throws -> [TAPost]

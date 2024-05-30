@@ -13,7 +13,7 @@ class TAPostDetailViewController: UIViewController {
     
     @IBOutlet weak var idLabel: UILabel!
     
-    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
     
     var post: TAPost?
     
@@ -30,6 +30,6 @@ class TAPostDetailViewController: UIViewController {
         
         idLabel.text = "Id: \(post?.id ?? 0)"
         
-        bodyLabel.text = post?.body ?? ""
+        detailLabel.text = (post?.body != nil) ? TAComputationCacheManager.shared.performIntensiveComputation(for: post!.body!) : "NA"
     }
 }
