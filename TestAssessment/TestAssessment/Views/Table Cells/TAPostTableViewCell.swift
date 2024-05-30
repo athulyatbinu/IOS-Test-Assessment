@@ -31,11 +31,6 @@ class TAPostTableViewCell: UITableViewCell {
         
         idLabel.text = "Id: \(post.id ?? 0)"
         
-        detailLabel?.text = (post.body != nil) ? performIntensiveComputation(for: post.body!) : "NA"
-    }
-    
-    func performIntensiveComputation(for text: String) -> String {
-        
-        return TAComputationCacheManager.shared.performIntensiveComputation(for: text)
+        detailLabel?.text = (post.body != nil) ? TAComputationCacheManager.shared.performIntensiveComputation(for: post.body!) : "NA"
     }
 }

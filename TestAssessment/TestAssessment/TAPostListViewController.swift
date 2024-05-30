@@ -21,13 +21,15 @@ class TAPostListViewController: UIViewController {
         
         super.viewDidLoad()
         
-        getDataAndReload()
+        getDataAndUpdateView()
     }
     
     //MARK: - Other Functions -
     
-    func getDataAndReload()
+    func getDataAndUpdateView()
     {
+        self.title = Strings.str_pageTitle_Posts
+        
         Task.init {
             
             await viewModel.fetchData()
@@ -84,7 +86,6 @@ extension TAPostListViewController : UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         
         let detailConrtoller = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "detailConrtoller") as! TAPostDetailViewController
         
